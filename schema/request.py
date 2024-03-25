@@ -7,4 +7,13 @@ class MenuRequest(BaseModel):
     price : int
     temperature : bool
 
+class CreateMenuRequest(BaseModel):
+    id: int
+    name: str
+    price: int
+    temperature: bool
+
+class CreateOrdersRequest(BaseModel):
+    menu_id : int
+
 
