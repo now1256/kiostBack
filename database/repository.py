@@ -15,8 +15,8 @@ class MenuRepository:
     def get_menus(self) -> List[Menu] :
         return self.session.execute(select(Menu)).scalars().all()
 
-    def get_menu_by_menu_id(self, menu_name: str) -> Menu | None:
-        return self.session.scalar(select(Menu).where(Menu.name == menu_name))
+    def get_menu_by_menu_id(self, menu_id: int) -> Menu | None:
+        return self.session.scalar(select(Menu).where(Menu.id == menu_id))
 
     # id를 저장 기본키 refresh를 통해 db에서 읽어옴
     def create_menu(self, menu: Menu) -> Menu:

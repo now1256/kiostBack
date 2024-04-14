@@ -21,12 +21,12 @@ def get_menu_handler(
         )
     raise HTTPException(status_code=404, detail="menu Not Found")
 
-@router.get("/menus/{menu_name}", status_code=200)
+@router.get("/menus/{menu_id}", status_code=200)
 def get_menus_handler(
-    menu_name : str ,
+    menu_id : int ,
     menu_repo: MenuRepository = Depends(),
 )-> MenuSchema :
-    menu : Menu | None = menu_repo.get_menu_by_menu_id(menu_name)
+    menu : Menu | None = menu_repo.get_menu_by_menu_id(menu_id)
     if menu:
         return MenuSchema.from_orm(menu)
     raise HTTPException(status_code=404, detail="menu Not Found")

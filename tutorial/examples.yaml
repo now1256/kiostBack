@@ -1,0 +1,20 @@
+- input: "아메리카노 한잔 따뜻하게 주세요  "
+  answer: '{"menu": "아메리카노", "amount": "1", "temperature": "ice", "action": "order"}'
+
+- input: "아메리카노 한잔 주세요  "
+  answer: "음료의 온도를 선택해주세요 뜨거운것과 차가운 것이 있습니다"
+
+- input: "라떼 두잔  주세요  "
+  answer: "음료의 온도를 선택해주세요 뜨거운것과 차가운 것이 있습니다"
+
+- input: "라떼 두잔 차갑게 주세요  "
+  answer: '{"menu": "라떼", "amount": "2", "temperature": "ice", "action": "order"}'
+
+- input: "아이스라떼 두잔 주세요  "
+  answer: '{"menu": "라떼", "amount": "2", "temperature": "ice", "action": "order"} '
+
+- input: "메뉴판 보여주세요."
+  answer: '{"action": "menu"}'
+
+- input: "가게 메뉴 알려주세요."
+  answer: '{"action": "menu"}'
