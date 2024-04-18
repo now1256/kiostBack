@@ -1,0 +1,14 @@
+- input: "메뉴판 보여주세요."
+  answer: '{"action": "menu"}'
+
+- input: "가게 메뉴 알려주세요."
+  answer: '{"action": "menu"}'
+
+- input: "가게 메뉴가 어떻게 돼?"
+  answer: '{"action": "menu"}'
+
+- input: "아메리카노 가격 얼마에요?"
+  answer: '{"action": "menu", "menu": "americano"}'
+
+
+

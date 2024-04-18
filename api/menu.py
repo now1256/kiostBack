@@ -7,9 +7,9 @@ from database.repository import MenuRepository
 from schema.request import MenuRequest, CreateMenuRequest
 from schema.resopnse import MenuSchema, MenuListSchema
 
-router = APIRouter(prefix="/users")
+router = APIRouter(prefix="/menus")
 
-@router.get("/menus",status_code=200)
+@router.get("",status_code=200)
 def get_menu_handler(
         menu_repo: MenuRepository = Depends()
 ) -> MenuListSchema:
@@ -21,7 +21,7 @@ def get_menu_handler(
         )
     raise HTTPException(status_code=404, detail="menu Not Found")
 
-@router.get("/menus/{menu_id}", status_code=200)
+@router.get("/{menu_id}", status_code=200)
 def get_menus_handler(
     menu_id : int ,
     menu_repo: MenuRepository = Depends(),

@@ -7,9 +7,9 @@ from database.repository import OrdersRepository
 from schema.request import CreateOrdersRequest
 from schema.resopnse import OrdersSChema, MenuListSchema, MenuSchema
 
-router = APIRouter(prefix="/users")
+router = APIRouter(prefix="/orders")
 
-@router.post("/orders",status_code=201)
+@router.post("",status_code=201)
 def create_orders(
         request: CreateOrdersRequest,
         order_repo: OrdersRepository = Depends()
@@ -18,7 +18,7 @@ def create_orders(
     orders: Orders = order_repo.create_order(orders = orders)
     return OrdersSChema.from_orm(orders)
 
-@router.get("/orders/{orders_id}",status_code=200)
+@router.get("/{menu_name}",status_code=200)
 def get_orders(
     orders_id : int ,
     order_repo: OrdersRepository = Depends()

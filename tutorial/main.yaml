@@ -1,0 +1,44 @@
+- input: "메뉴판 보여주세요."
+  answer: 'menu'
+
+- input: "가게 메뉴 알려주세요."
+  answer: 'menu'
+
+- input: "아메리카노 한잔 따뜻하게 주세요  "
+  answer: 'order'
+
+- input: "아메리카노 한잔 주세요 "
+  answer: 'order'
+
+- input: "라떼 두잔  주세요 "
+  answer: 'order'
+
+- input: "라떼 두잔 차갑게 주세요  "
+  answer: 'order'
+
+- input: "아이스라떼 두잔 주세요  "
+  answer: 'order'
+
+- input: "안녕하세요"
+  answer: 'etc'
+
+- input: "메뉴 추천 해주세요"
+  answer: 'etc'
+
+- input: "가게에서 제일 잘나가는게 뭐에요?"
+  answer: 'etc'
+
+- input: "주문하려고 하는데요 "
+  answer: 'order'
+
+- input: "메뉴판 보여주세요."
+  answer: 'menu'
+
+- input: "가게 메뉴 알려주세요."
+  answer: 'menu'
+
+- input: "가게 메뉴가 어떻게 돼?"
+  answer: 'menu'
+
+
+
