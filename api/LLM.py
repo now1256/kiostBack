@@ -21,7 +21,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 router = APIRouter(prefix="/status")
 
